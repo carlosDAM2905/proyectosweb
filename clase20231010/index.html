@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ul {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--Las listas pueden ser numeradas o no numeradas-->
+    <h1>Listas numeradas</h1> <!--Del inglés Ordered List, de ahí la etiqueta ol-->
+    <ol style="list-style: lower-latin;"><!--esta etiqueta significa que la lista comienza / termina pero no tiene más contenido-->
+        <!--los puntos que contiene se tienen que añadir con la etiqueta li (de List Item)-->
+        <li>Lenguajes de marcas</li>
+        <li>Entornos de desarrollo</li>
+        <li>Programación</li>
+        <li>Base de datos</li>
+    </ol>
+    
+    <h1>Listas no numeradas</h1>
+    <!--Son las que ponen puntos, no establecen una ordenación númerica, de ahí la etiqueta ul (unordered List)-->
+    <ul style="list-style-type: square;"> <li>Lenguajes de marcas</li>
+        <li>Entornos de desarrollo</li>
+        <li>Programación</li>
+        <li>Base de datos</li></ul>
+    
+        <h1>Listas anidadas</h1>
+        <!--Son listas que están dentro de otras listas y pueden combinarse tanto numeradas cono no numeradas-->
+    <ul style="list-style-type: disc ;">
+        <li>Lenguajes de marcas.
+            <ol><!--debajo del item que me interese añado una lista del tipo que yo quiera; en este ejemplo la lista ol esta anidada (dentro de) la lista ul-->
+                <li>introduccion a los lenguajes de marcas </li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>XML</li>
+            </ol>
+        </li>
+        
+        <li>Entornos de desarrollo.
+            <ol>
+                <li>introducion al desarrollo de software</li>
+                <li>instalacion y uso de entornos de desarrollo</li>
+                <li>diagramas de flujo</li>
+            </ol>
+        </li>
+        
+        <li>Programación.
+            <ol>
+                <li>¡hola, mundo!</li>
+                <li>operadores</li>
+                <li>estructuras de control</li>
+            </ol>
+        </li>
+        <li>Base de datos.
+            <ol>
+                <li>entidad-relacion</li>
+                <li>estructura de una base de datos</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
